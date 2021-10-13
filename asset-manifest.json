@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/test-for-daocode/static/css/main.22b72f2a.chunk.css",
+    "main.js": "/test-for-daocode/static/js/main.3937aa9b.chunk.js",
+    "main.js.map": "/test-for-daocode/static/js/main.3937aa9b.chunk.js.map",
+    "runtime-main.js": "/test-for-daocode/static/js/runtime-main.5635e5c4.js",
+    "runtime-main.js.map": "/test-for-daocode/static/js/runtime-main.5635e5c4.js.map",
+    "static/js/2.327ffed1.chunk.js": "/test-for-daocode/static/js/2.327ffed1.chunk.js",
+    "static/js/2.327ffed1.chunk.js.map": "/test-for-daocode/static/js/2.327ffed1.chunk.js.map",
+    "index.html": "/test-for-daocode/index.html",
+    "static/css/main.22b72f2a.chunk.css.map": "/test-for-daocode/static/css/main.22b72f2a.chunk.css.map",
+    "static/js/2.327ffed1.chunk.js.LICENSE.txt": "/test-for-daocode/static/js/2.327ffed1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5635e5c4.js",
+    "static/js/2.327ffed1.chunk.js",
+    "static/css/main.22b72f2a.chunk.css",
+    "static/js/main.3937aa9b.chunk.js"
+  ]
+}
