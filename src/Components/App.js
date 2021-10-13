@@ -34,23 +34,17 @@ export default function App() {
     getWeatherByQuery();
   }, [query]); /* eslint-disable-line*/
 
-  const getWeather = () => {
-    getWeatherByCoordsAPI({ latt, long })
-      .then((data) => {
-        setWeatherData({
-          icon: data.weather[0].icon,
-          description: data.weather[0].description,
-          temp: data.main.temp,
-          // temp_min: data.main.temp_min,
-          // temp_max: data.main.temp_max,
-          // name: data.name,
-          // country: data.sys.country,
-          // coord: data.coord,
-        });
-      })
-      .catch((error) => {
-        setError(error);
+  const getWeather = async () => {
+    try {
+      const response = await getWeatherByCoordsAPI({ latt, long });
+      setWeatherData({
+        icon: response.weather[0].icon,
+        description: response.weather[0].description,
+        temp: response.main.temp,
       });
+    } catch (error) {
+      setError(error);
+    }
   };
 
   const getWeatherByQuery = () => {
@@ -61,7 +55,6 @@ export default function App() {
           description: data.weather[0].description,
           temp: data.main.temp,
           temp_min: data.main.temp_min,
-          temp_max: data.main.temp_max,
           name: data.name,
           country: data.sys.country,
           coord: data.coord,
