@@ -37,7 +37,6 @@ export default function App() {
   const getWeather = () => {
     getWeatherByCoordsAPI({ latt, long })
       .then((data) => {
-        console.log(data);
         setWeatherData({
           icon: data.weather[0].icon,
           description: data.weather[0].description,
@@ -57,7 +56,6 @@ export default function App() {
   const getWeatherByQuery = () => {
     getWeatherByCityName(query)
       .then((data) => {
-        console.log(data);
         setWeatherData({
           icon: data.weather[0].icon,
           description: data.weather[0].description,
